@@ -37,20 +37,10 @@ Tab:AddButton({
 })
 
 local Section = Tab:AddSection({
-	Name = "Farm"
+	Name = "Upgrade"
 })
 
 
-Tab:AddToggle({
-	Name = "Auto Reload",
-	Default = false,
-	Callback = function(Value)
-	_G.autoReload = Value
-    while _G.autoReload and wait() do
-		game:GetService("ReplicatedStorage").Events.ReloadEvent:FireServer()
-	end    
-	end
-})
 
 Tab:AddToggle({
 	Name = "Auto Upgrade TankDame",
@@ -63,7 +53,7 @@ Tab:AddToggle({
 }
 
 game:GetService("ReplicatedStorage").Events.PlayerUpgradeTank:FireServer(unpack(args))
-
+wait(0)
 	end    
 	end
 })
@@ -80,7 +70,7 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage").Events.PlayerUpgradeTank:FireServer(unpack(args))
-
+wait(0)
 	end    
 	end
 })
@@ -96,7 +86,7 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage").Events.PlayerUpgradeTank:FireServer(unpack(args))
-
+wait(0)
 	end    
 	end
 })
@@ -112,7 +102,7 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage").Events.PlayerUpgradeTank:FireServer(unpack(args))
-
+wait(0)
 	end    
 	end
 })
@@ -128,7 +118,7 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage").Events.PlayerUpgradeTank:FireServer(unpack(args))
-
+wait(0)
 	end    
 	end
 })
@@ -147,7 +137,7 @@ Tab:AddToggle({
 }
 
 game:GetService("ReplicatedStorage").Events.GemStoreEvent:InvokeServer(unpack(args))
-
+wait(0)
 	end    
 	end
 })
@@ -164,7 +154,7 @@ Tab:AddToggle({
 }
 
 game:GetService("ReplicatedStorage").Events.GemStoreEvent:InvokeServer(unpack(args))
-
+wait(0)
 	end    
 	end
 })
@@ -183,7 +173,7 @@ local args = {
 
 game:GetService("ReplicatedStorage").Events.GemStoreEvent:InvokeServer(unpack(args))
 
-
+wait(0)
 	end    
 	end
 })
@@ -204,7 +194,7 @@ local args = {
 
 game:GetService("ReplicatedStorage").Events.GemStoreEvent:InvokeServer(unpack(args))
 
-
+wait(0)
 
 	end    
 	end
@@ -224,7 +214,7 @@ local args = {
 
 game:GetService("ReplicatedStorage").Events.GemStoreEvent:InvokeServer(unpack(args))
 
-
+wait(0)
 
 	end    
 	end
@@ -246,7 +236,7 @@ local args = {
 
 game:GetService("ReplicatedStorage").Events.GemStoreEvent:InvokeServer(unpack(args))
 
-
+wait(0)
 
 
 	end    
@@ -296,7 +286,7 @@ TabTwo:AddToggle({
     while _G.autoBest and wait() do
 		
 game:GetService("ReplicatedStorage").Events.EquipBest:FireServer()
-
+wait(0)
 	end    
 	end
 })
