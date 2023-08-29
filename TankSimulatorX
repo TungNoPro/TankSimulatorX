@@ -332,7 +332,3 @@ TabTwo:AddDropdown({
     print(_G.selEgg)
 	end    
 })
-
-
-    Name = "Key in: discord.gg/HvpXquveNA"
-})
